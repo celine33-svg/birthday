@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Inter:wght@400;600;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fredoka", sans-serif;
+  
+  --color-quest-bg: #FFF9E6;
+  --color-quest-text: #4A3B2A;
+  --color-quest-accent: #FFD95A;
+  --color-quest-heading: #D97706;
+  --color-quest-bubble: #FFE8A3;
+  --color-quest-pouch: #E5B94E;
+}
+
+body {
+  background-color: var(--color-quest-bg);
+  color: var(--color-quest-text);
+  font-family: var(--font-sans);
+}
+
+.fredoka {
+  font-family: var(--font-display);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
